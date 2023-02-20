@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+<VBox AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="5" AnchorPane.rightAnchor="5" AnchorPane.topAnchor="10">
+    <TableView fx:id="personList">
+        <columns>
+            <TableColumn text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="NAME">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="MAIL">
+                <cellValueFactory>
+                    <PropertyValueFactory property="mail"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="ADDRESS">
+                <cellValueFactory>
+                    <PropertyValueFactory property="address"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="PHONE">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phoneNumber"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="COMPANY">
+                <cellValueFactory>
+                    <PropertyValueFactory property="company"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="BIRTH DATE">
+                <cellValueFactory>
+                    <PropertyValueFactory property="birthDate"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="GENDER">
+                <cellValueFactory>
+                    <PropertyValueFactory property="gender"/>
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+    </TableView>
+</VBox>
+</AnchorPane>

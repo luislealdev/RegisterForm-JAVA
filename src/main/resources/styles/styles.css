@@ -1,0 +1,30 @@
+.form{
+    -fx-background-color: white;
+    -fx-alignment: "center" ;
+    -fx-spacing: 20;
+}
+
+.formTitle{
+    -fx-max-width: "Infinity";
+    -fx-font-size: 20;
+    -fx-alignment: "center";
+}
+
+TextField{
+    -fx-border-radius: 100;
+}
+
+.btn-info{
+    -fx-background-color: #dcd3d3;
+    -fx-text-fill: black;
+}
+
+.btn-danger{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.btn-primary{
+    -fx-background-color: #4a7ffc;
+    -fx-text-fill: white;
+}
