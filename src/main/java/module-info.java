@@ -4,5 +4,7 @@ module luisrrleal.com.registerformjava {
 
 
     opens luisrrleal.com.registerformjava to javafx.fxml;
+    opens luisrrleal.com.registerformjava.controllers;
+    opens luisrrleal.com.registerformjava.models;
     exports luisrrleal.com.registerformjava;
 }

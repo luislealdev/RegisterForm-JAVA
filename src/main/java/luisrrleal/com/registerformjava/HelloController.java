@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//TODO: Load table
 
 public class HelloController {
 
@@ -48,17 +47,18 @@ public class HelloController {
         person.setGender(cmbGender.getValue().toString());
 
         people.add(person);
-        showMessage(txtName.getText()+"has been saved successfully");
+        showMessage(txtName.getText()+" has been saved successfully");
     }
     @FXML
     private void onViewButtonClick(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("show-person-list.fxml"));
 
         try {
-            Parent root = loader.load();
             ShowPersonList showPersonList = new ShowPersonList();
             showPersonList.setPersonList(people);
             loader.setController(showPersonList);
+
+            Parent root = loader.load();
 
             Stage stage = new Stage();
             Scene scene = new Scene(root, 800, 350);
